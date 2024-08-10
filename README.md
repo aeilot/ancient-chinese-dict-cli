@@ -18,3 +18,10 @@ pip install -r requirements.txt
 ```
 
 Then you can run this program with `python app.py`.
+
+
+## Credit
+
+Dictionary data are from [lwl5219/ancient_chinese](https://github.com/lwl5219/ancient_chinese).
+
+App built with [Typer](https://github.com/fastapi/typer).
