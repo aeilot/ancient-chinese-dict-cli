@@ -20,8 +20,7 @@ with open('ancient_chinese.json','r',encoding='utf-8') as file:
 # Read Item
 def item_read(item):
     # Create a title panel for the word
-    title = Text(item['word'], style="bold cyan", justify="center")
-    title.stylize("bold magenta")
+    title = Text(item['word'], style="bold magenta", justify="center")
     
     console.print()
     console.print(Panel(title, title="[bold yellow]汉字 / Character[/bold yellow]", 
@@ -39,7 +38,7 @@ def item_read(item):
         table.add_column("序号 / No.", style="cyan", width=8, justify="center")
         table.add_column("释义 / Definition", style="white")
         
-        exp_list = listOfExplain[str(pronun)]
+        exp_list = listOfExplain[pronun]
         for idx, definition in enumerate(exp_list, 1):
             if definition.strip():  # Only add non-empty definitions
                 # Add some styling to the definition
