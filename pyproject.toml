@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ancient-chinese-dictionary"
+version = "0.1.0"
+description = "A CLI dictionary for ancient Chinese"
+authors = [""]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = "^0.9.0"
+rich = "^13.0.0"
+typing-extensions = "^4.0.0"
+
+[tool.poetry.scripts]
+ancient-chinese = "app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
